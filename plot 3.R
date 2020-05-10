@@ -1,6 +1,6 @@
 ## we have the data from earlier plottings 
 ## Now create the visualizations
-png('plot 3.png')
+png('plot 3.png', height = 480, width = 480)
 with(dataSubsetted, plot(Sub_metering_1~dateTime, type="l",
        ylab="Global Active Power (kilowatts)", xlab=""))
 with(dataSubsetted,lines(Sub_metering_2~dateTime,col='Red'))

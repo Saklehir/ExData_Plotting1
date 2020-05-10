@@ -23,8 +23,7 @@ dataSubsetted <- cbind(dateTime, dataSubsetted)
 ## Format dateTime Column
 dataSubsetted$dateTime <- as.POSIXct(dateTime)
 # 
-
-png('plot 1.png')
+png('plot 1.png', width = 480, height = 480)
 hist(dataSubsetted$Global_active_power, xlab = 'Global Active Power (kilowatts)', col = 'red', main = 'Global Active Power')
 
 dev.off()

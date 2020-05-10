@@ -1,7 +1,8 @@
 ## we have the data from earlier plottings 
 ## Now create the visualizations
+
+png('plot 4.png', height = 480, width = 480)
 par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(0,0,2,0))
-png('plot 4.png')
 plot(dataSubsetted$Global_active_power~dataSubsetted$dateTime, type="l", ylab = "Global Active Power (kilowatts)", xlab='')
 plot(dataSubsetted$Voltage~dataSubsetted$dateTime, type="l", ylab = "Voltage", xlab='datetime')
 with(dataSubsetted,
